@@ -23,6 +23,7 @@ def index():
 def get_data():
 	return jsonify(data)
 
+
 @server.route('/getlights') # URL
 def get_lights():
 	return jsonify(lights)
