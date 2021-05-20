@@ -1,27 +1,15 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Flask Template</title>
-    <style>
-      form {
-        margin: 0 auto;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      input {
-        font-size: 28px;
-        margin-top: 20px;
-      }
-    </style>
-	</head>
-	<body>
-		<form action="/user">
-			<input type="text" placeholder="username" name="username"></input>
-			<input type="submit" value="go to your page"></input>
-		</form>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+  </head>
+  <body>
+    <script src="{{url_for('static', filename='sketch.js')}}"></script>
 	</body>
 </html>
