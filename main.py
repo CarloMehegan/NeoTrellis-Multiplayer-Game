@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 server = Flask(__name__)
 
@@ -8,7 +8,7 @@ data = {
 
 @server.route('/') # URL
 def index():
-	return jsonify(data)
+	return render_template('index.html')
 
 @server.route('/2/') # URL
 def two():
